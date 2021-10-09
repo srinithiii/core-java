@@ -1,0 +1,20 @@
+class main{
+public static void main(String[] args){
+main ref=new main();
+boolean result=ref.primenumber(7);
+System.out.println(result);
+}
+public boolean primenumber(int n){
+int count=0;
+for(int temp=1;temp<=n;temp++){
+if(n%temp==0){
+count++;
+}
+if(count==2){
+return true;
+}
+}
+return false;
+}
+}
+
