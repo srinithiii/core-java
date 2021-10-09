@@ -1,0 +1,10 @@
+class reversenumber{
+    public static void main(String []a){
+        int numb=1234,rev=0,temp=numb;
+        while(numb!=0){
+            rev=(rev*10)+(numb%10);
+        numb=numb/10;
+        }
+        System.out.println(rev);
+    }
+}
