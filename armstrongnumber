@@ -1,0 +1,24 @@
+
+class armstrongnumber{
+    public static void main(String[]a){
+        int numb=153,sum=0,count=0,temp=numb;
+        while(numb!=0){
+         numb=numb/10;
+          count++;
+        }
+       numb=temp;
+       while(numb!=0){
+           int rem=numb%10;
+           int power=count;
+           int powgen=1;
+         while(power>0){
+           powgen=powgen*rem;
+           power--;
+         }
+           sum=sum+powgen;
+           numb=numb/10;
+           }
+           String result=(temp==sum)?"armstrongnumber" : "not armstrongnumber";
+           System.out.println(result);
+       }
+    }
